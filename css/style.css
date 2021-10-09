@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-bg {
+    background-image: url("../img/bg.jpg");
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.btn-div {
+    padding-top: 25%;
+}
+
+.h-btn {
+    background: rgba(255, 255, 255, 0.699);
+    margin: 0;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.ti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    color: rgb(43, 43, 43);
+    transition: 0.3s;
+}
+
+.h-btn :hover {
+    border-radius: 100%;
+    background: rgba(252, 134, 252, 0.534);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.h-btn :active {
+    border-radius: 100%;
+    background: rgba(250, 85, 250, 0.534);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Phone */
+
+@media (max-width:767px) {
+    .title {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .btn-div {
+        padding-top: 60%;
+    }
+    .ti {
+        font-size: 15px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        width: 115px;
+        height: 115px;
+    }
+}
+
+
+/* taplat  */
+
+@media (min-width:768px) and (max-width:991px) {
+    .title {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+    .btn-div {
+        padding-top: 60%;
+    }
+    .ti {
+        font-size: 18px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        width: 125px;
+        height: 125px;
+    }
+}

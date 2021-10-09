@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-bg {
+    background-image: url("../H_pron/img/bg-two.jpg");
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.title {
+    color: rgb(54, 54, 54);
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.score {
+    text-align: center;
+    width: 10%;
+    user-select: none;
+    background-color: white;
+    box-shadow: inset 0px 0px 11px 1px rgb(0 0 0 / 20%);
+    border-radius: 20px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 80%;
+}
+
+.img {
+    width: 20%;
+    user-select: none;
+}
+
+.restart {
+    width: 50px;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.restart-btn :hover {
+    transform: scale(1.1);
+}
+
+.restart-btn :active {
+    transform: scale(1);
+}
+
+.running {
+    width: 70px;
+    user-select: none;
+    transition: 0.5s;
+}
+
+.hint-img {
+    user-select: none;
+    width: 40%;
+}
+
+.idea {
+    width: 25px;
+}
+
+
+/* Phone */
+
+@media (max-width:767px) {
+    .title {
+        font-size: 18px;
+        padding-top: 20px;
+    }
+    .score {
+        width: 20%;
+    }
+    .img {
+        width: 40%;
+    }
+    .restart {
+        width: 40px;
+    }
+    .running {
+        width: 55px;
+    }
+}
+
+
+/* taplat  */
+
+@media (min-width:768px) and (max-width:991px) {
+    .title {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    .score {
+        width: 20%;
+    }
+    .img {
+        width: 30%;
+    }
+}

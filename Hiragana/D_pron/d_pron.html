@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="icon" href="../H_read/img/icon.png">
+    <link rel="stylesheet" href="../../vendor/feather-icons-web/feather.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+    <link rel="stylesheet" href="./d_pron.css">
+    <title>Japan Language Practice</title>
+</head>
+
+<body>
+    <div class="main-bg">
+
+        <div class="container vh-100">
+
+            <div class="d-flex justify-content-between align-items-center  title">
+                <a href="../hiragana.html">
+                    <button class="btn btn-light">
+                        <i class="fas fa-arrow-left"></i>
+                     </button>
+                </a>
+                <div class="score">
+                    <i class="fas fa-star text-warning"> <samp class="text-dark" id="Total">0</samp></i>
+                </div>
+            </div>
+
+            <div class="center">
+                <div class="d-flex justify-content-around restart-btn">
+                    <a href="#" id="RestartBtn"><img src="./img/restart-buttom.png" class="restart"></a>
+                </div>
+
+                <div class="d-flex justify-content-around btn-div">
+                    <img src="./img/emoji.gif" class="img" id="Hiragana">
+                </div>
+
+                <div class="d-flex justify-content-around restart-btn">
+                    <a href="#" id="StartBtn"><img src="./img/start-buttom.png" class="running"></a>
+                </div>
+            </div>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-info d-flex m-auto justify-content-center align-items-center" data-toggle="modal" data-target="#exampleModal">
+                <img src="./img/idea.png" class="idea mr-1">Hint
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="../../img/Hirag/D-Romaji/0.png" class="hint-img" id="Hint">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="./d_pron.js"></script>
+</body>
+
+</html>

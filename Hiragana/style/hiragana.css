@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+}
+
+.main-bg {
+    background-image: url("../h-bg.jpg");
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.title {
+    color: white;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    padding-top: 20px;
+}
+
+.btn-div {
+    padding-top: 10%;
+    flex-wrap: wrap;
+}
+
+.h-btn {
+    background: rgba(255, 255, 255, 0.699);
+    margin: 30px;
+    padding: 0;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+.ti {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    width: 160px;
+    height: 160px;
+    margin: 0;
+    color: rgb(43, 43, 43);
+    transition: 0.3s;
+}
+
+.h-btn :hover {
+    border-radius: 100%;
+    background: rgba(252, 134, 252, 0.534);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.h-btn :active {
+    border-radius: 100%;
+    background: rgba(250, 85, 250, 0.534);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+/* Phone */
+
+@media (max-width:767px) {
+    .title {
+        font-size: 18px;
+        padding-top: 11px;
+    }
+    .btn-div {
+        padding-top: 15px;
+    }
+    .h-btn {
+        margin: 10px;
+    }
+    .ti {
+        font-size: 12px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        width: 110px;
+        height: 110px;
+    }
+}
+
+
+/* taplat  */
+
+@media (min-width:768px) and (max-width:991px) {
+    .title {
+        font-size: 25px;
+        padding-top: 20px;
+    }
+    .btn-div {
+        padding-top: 15%;
+    }
+    .ti {
+        font-size: 19px;
+        letter-spacing: 2px;
+        font-weight: bold;
+        width: 165px;
+        height: 165px;
+    }
+}
